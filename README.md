@@ -10,7 +10,8 @@
 4. [noMeiryoUI](https://github.com/Tatsu-syo/noMeiryoUI/releases)
 5. [굴림+맑은고딕 개조 폰트](https://drive.google.com/drive/folders/17tJ91Atl2n6J1FX9ZUHBn0xEp3Tq4Zd7?usp=sharing) (출처: https://meeco.kr/Review/39555961)
 6. [굴림 TTC 폰트](https://github.com/ubermenschjo/dotfiles/blob/master/.fonts/gulim.ttc)
-7. 한글이 안 나와도 로그인할 수 있는 머슬 메모리
+7. [Pretendard JP 폰트](https://github.com/orioncactus/pretendard/releases) 
+8. 한글이 안 나와도 로그인할 수 있는 머슬 메모리
 
 ## 1. 굴림, 맑은고딕 삭제하기
 
@@ -47,6 +48,9 @@ malgunsl.ttf
 위 3개의 파일을 쉬프트 우클릭으로 설치.
 
 ![글꼴 설치 사진](res/installfont.png)
+
+이후 위에서 받은 `PretendardJP-1.3.9.zip` 파일을 압축풀어서
+`public/static/alternative` 안에 있는 모든 ttf를 똑같이 설치.
 
 ## 3. 굴림 깔았다 지우기
 
