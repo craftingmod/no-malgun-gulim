@@ -1,0 +1,26 @@
+/*==UserStyle==
+@name        굴림, 맑은고딕 제거 (PretendardJP 대체)
+@description 굴림, 맑은고딕을 PretendardJP 폰트로 교체해줘요.
+@namespace   NoGulimSans
+@license     CC0
+@version     1.0.0
+@preprocessor default
+==/UserStyle== */
+
+@-moz-document regexp("http.*") {
+  @font-face {
+    font-family: "Malgun Gothic";
+    src: local("Pretendard JP Variable");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "gulim";
+    src: local("Pretendard JP Variable");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "dotum";
+    src: local("Pretendard JP Variable");
+    font-display: swap;
+  }
+}
