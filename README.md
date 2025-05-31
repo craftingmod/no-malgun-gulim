@@ -122,5 +122,16 @@ C:\Program Files\MacType\ini
 
 적용.
 
+------
+
+Adguard 사용 시에는
+설정 - 확장 - 확장 프로그램 추가 - 파일 또는 URL에서 가져오기에
+
+```
+https://cdn.jsdelivr.net/gh/craftingmod/no-malgun-gulim/no-gulim.user.css
+```
+
+입력.
+
 ## 결론
 이러면 좀 불편함은 있지만 완성
