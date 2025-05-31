@@ -10,8 +10,9 @@
 4. [noMeiryoUI](https://github.com/Tatsu-syo/noMeiryoUI/releases)
 5. [굴림+맑은고딕 개조 폰트](https://drive.google.com/drive/folders/17tJ91Atl2n6J1FX9ZUHBn0xEp3Tq4Zd7?usp=sharing) (출처: https://meeco.kr/Review/39555961)
 6. [굴림 TTC 폰트](https://github.com/ubermenschjo/dotfiles/blob/master/.fonts/gulim.ttc)
-7. [Pretendard JP 폰트](https://github.com/orioncactus/pretendard/releases) 
-8. 한글이 안 나와도 로그인할 수 있는 머슬 메모리
+7. [Pretendard JP 폰트](https://github.com/orioncactus/pretendard/releases)
+8. (엣지 사용 시) [Custom Style Script](https://microsoftedge.microsoft.com/addons/detail/custom-style-script/eocdolakkgkbmnfojgicnicdnmimfhoo) 확장 추가 기능
+9. 한글이 안 나와도 로그인할 수 있는 머슬 메모리 
 
 ## 1. 굴림, 맑은고딕 삭제하기
 
@@ -79,7 +80,8 @@ Gulim & GulimChe & Dotum & DotumChe (TrueType)
 ```
 C:\Windows\Fonts
 ```
-경로를 입력 후 굴림 글꼴 삭제. (안될 시에는 우분투 설치 USB로 부팅해서 지우는 걸 권장.)
+경로를 입력 후 ~~굴림 글꼴 삭제. (안될 시에는 우분투 설치 USB로 부팅해서 지우는 걸 권장.)~~
+* 굴림 삭제시 다시 영문 폰트가 이상해지므로 일단은 들고 가는 게 맞음.
 
 이후 재부팅 한번.
 
@@ -97,5 +99,28 @@ C:\Program Files\MacType\ini
 
 **관리자 권한으로 실행**해서 모든 글꼴 부분을 선택한 후 `Pretendard JP Medium` 같은 것 선택 -> 모두 설정 -> 종료.
 
+## 6. 웹사이트에서 굴림, 맑은 고딕 대처
 
-하면 좀 불편함은 있지만 완성
+위의 Custom Style Script나 다른 사이트에 CSS 적용 가능한 확장 프로그램 설치 후에
+
+사이트는 `*`, `Style (CSS)` 부분에
+
+```css
+@font-face {
+    font-family: "Malgun Gothic";
+    src: local("Pretendard JP Variable");
+}
+@font-face {
+    font-family: "gulim";
+    src: local("Pretendard JP Variable");
+}
+@font-face {
+    font-family: "dotum";
+    src: local("Pretendard JP Variable");
+}
+```
+
+적용.
+
+## 결론
+이러면 좀 불편함은 있지만 완성
